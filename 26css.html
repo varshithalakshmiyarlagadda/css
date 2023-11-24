@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+ display: grid;
+ grid-template-areas:
+   'header header header header header header'
+   'menu main main main right right'
+   'menu footer footer footer footer footer';
+ gap:20px;
+ background-color:#F592EA;
+ padding: 30px;
+}
+
+.grid-container>div {
+ background-color:rgba(156, 242, 122);
+ text-align:center;
+ padding: 20px;
+ font-size:30px;
+}
+
+a
+{
+ text-decoration:underline dotted;
+}
+a.hover
+{
+background-color:red;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+<p>this grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">VARSHITHA LAKSHMI YARLAGADDA</div>
+  <div class="item2">
+<a href="/director.html">DIRECTOR</a><br><br>
+<a href="/faculty.html">FACULTY</a><br><br>
+<a href="/achievements.html">ACHIEVEMENTS</a><br><br>
+<a href="/press.html">PRESS</a><br><br>
+<a href="/gallery.html">GALLERY</a><br><br>
+<a href="/courses.html">COURSES</a><br><br>
+<a href="/contactus.html">CONTACTUS</a>
+</div>
+   <div class="item3">Main</div>ssss
+   <div class="item4">Right</div>
+   <div class="item5">Footer</div>
+</div>
+</body>
+</html>
+

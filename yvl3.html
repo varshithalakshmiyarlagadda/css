@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .image-container {
+      border: 2px solid #333; /* You can change the color and width of the border */
+      padding: 10px; /* Optional: Add some padding to the border */
+      display: inline-block; /* Ensures that the container only takes the space it needs */
+    }
+
+    .image-container img {
+      max-width: 100%; /* Ensure the image doesn't exceed the container width */
+      height: auto; /* Maintain the image's aspect ratio */
+      display: block; /* Remove extra space below the image */
+    }
+  </style>
+</head>
+<body>
+
+<div class="image-container">
+  <img src="file://c:/images/01.jpg">
+  <border image="file://c:/images/02.jpg">
+</div>
+
+</body>
+</html>
